@@ -36,3 +36,19 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm preview`            | Preview your build locally, before deploying     |
 | `pnpm astro ...`          | Run CLI commands like `astro add`, `astro check` |
 | `pnpm astro -- --help`    | Get help using the Astro CLI                     |
+
+## ✍️ Writing With Pages CMS
+
+- Post content is stored in `src/content/posts/`.
+- Content schema is defined in `src/content.config.ts` (`posts` collection).
+- Pages CMS config lives in `.pages.yml`.
+- Writing routes:
+  - `/writing/` for the post list
+  - `/writing/<slug>/` for individual posts
+
+To use the editor:
+
+1. Open Pages CMS and connect this GitHub repository.
+2. Pages CMS will auto-detect `.pages.yml`.
+3. Create/edit posts in the `Posts` collection.
+4. Commit changes; your Astro site will render them automatically.
